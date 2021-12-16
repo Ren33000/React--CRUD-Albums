@@ -1,21 +1,5 @@
 import React, {useState} from 'react';
 
-const [albums,setAlbums]=useState([])
-
-const fetchData  = () => {
-    fetch('https://jsonplaceholder.typicode.com/users/1/albums', {
-      method: 'POST',
-      body: JSON.stringify({
-          name: 'foo',
-    }),
-    headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-    },
-    })
-      .then((response) => response.json())
-      .then((json) => console.log(json));
-    }
-
 
 // to start from here
 // calling the API and saving it
